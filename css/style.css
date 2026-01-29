@@ -78,6 +78,17 @@ p {
   transition: .5s;
 }
 
+.btn-web {
+  font-size: 15px;
+  padding: 7px 20px;
+  color: #fff;
+  background-color: #426bbf;
+}
+.btn-web:hover {
+  color: #27dfff;
+}
+
+
 .btn-square {
   width: 38px;
   height: 38px;
@@ -571,20 +582,6 @@ p {
 .blog_area {
   background-color: #f4f6ff;
 }
-.blog_area a {
-    color: "Barlow", sans-serif !important;
-    text-decoration: none;
-    transition: .4s
-}
-
-.blog_area a:hover,
-.blog_area a :hover {
-    background: -webkit-linear-gradient(131deg, #ff2143 0%, #ff2143 99%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-decoration: none;
-    transition: .4s
-}
 
 .single-blog {
     overflow: hidden;
@@ -1021,13 +1018,6 @@ p {
     margin-bottom: 30px
 }
 
-.blog_details a {
-    color: #ff8b23
-}
-
-.blog_details a:hover {
-    color: #ff2143
-}
 
 .blog_details h2 {
     font-size: 18px;
