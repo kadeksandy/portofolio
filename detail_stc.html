@@ -20,6 +20,7 @@
         
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
         <!-- Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -43,12 +44,24 @@
                 </div>
             </div>
             
-            <!-- Detail Proyek -->  
-            <div class="details"></div>
+            <nav class="sticky navbar">
+                <input type="checkbox" id="nav" class="hidden" />
+                <div class="nav">
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="index.html#beranda" class="nav__link">Beranda</a></li>
+                        <li class="nav__item"><a href="index.html#tentang" class="nav__link">Tentang</a></li>
+                        <li class="nav__item"><a href="index.html#keterampilan" class="nav__link">Keterampilan</a></li>
+                        <li class="nav__item"><a href="index.html#pendidikan" class="nav__link">Pendidikan</a></li>
+                        <li class="nav__item"><a href="index.html#karya" class="nav__link">Karya</a></li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Detail Proyek -->
             <section class="blog_area single-post-area section-padding py-6" id="about">
                 <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-8 posts-list">
+                    <div class="row">
+                        <div class="col-lg-8">
                             <div class="single-post">
                                 <div class="feature-img kegiatan-cover">
                                     <img class="img-fluid" src="aset/stc.png" alt="">
@@ -56,37 +69,54 @@
 
                                 <div class="blog_details">
                                     <h2>Stibajra Technology Competition</h2>
-                                    <div class="ck-content ">
+                                    <div class="ck-content">
                                         <p>
-                                            
-                                            <br>
-                                            
+                                            <strong>STC (Stibajra Technology Competition)</strong> adalah platform digital yang berfungsi sebagai pusat informasi dan pendaftaran 
+                                            untuk ajang kompetisi teknologi tahunan yang diselenggarakan oleh SMK TI Bali Global Jimbaran. Fokus utama pengembangan proyek ini adalah pada sisi frontend, 
+                                            dengan mengedepankan struktur konten yang rapi serta kemudahan akses informasi bagi calon peserta
                                         </p>
+                                        <h4>Fitur utama:</h4>
+                                        <ul>
+                                            <li>
+                                            <strong>Sistem Pendaftaran:</strong> 
+                                                Memungkinkan calon peserta untuk melakukan pendaftaran secara mandiri langsung melalui platform, mempermudah manajemen data panitia.
+                                            </li>
+                                            <li>
+                                            <strong>Informasi Kategori Lomba:</strong> 
+                                                Menyajikan detail lengkap mengenai berbagai cabang kompetisi, lengkap dengan deskripsi masing-masing kategori.
+                                            </li>
+                                            <li>
+                                            <strong>Galeri Dokumentasi Interaktif:</strong> 
+                                                Menampilkan rekam jejak visual dari pelaksanaan STC pada tahun-tahun sebelumnya untuk memberikan gambaran kegiatan kepada calon peserta dan sponsor.
+                                            </li>
+                                            <li>
+                                            <strong>Ruang Promosi Sponsor:</strong> 
+                                                Menyediakan area khusus pada antarmuka website untuk menampilkan logo serta apresiasi bagi para mitra dan pendukung acara.
+                                            </li>
+                                            <li>
+                                            <strong>Tombol Kontak Melayang:</strong> 
+                                                Fitur akses cepat berupa tombol narahubung yang tetap berada di posisi strategis pada layar, 
+                                                memudahkan pengguna untuk berkonsultasi dengan panitia kapan saja.
+                                            </li>
+                                            <li>
+                                            <strong>Integrasi Maps:</strong> 
+                                                Memudahkan pengunjung dan peserta untuk menemukan lokasi fisik pelaksanaan kegiatan di SMK TI Bali Global Jimbaran.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="blog_right_sidebar">
-                                <aside class="single_sidebar_widget search_widget">
-                                    <form action="" method="GET">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="q" class="form-control" placeholder="Search kegiatan">
-                                            <div class="input-group-append">
-                                                <button class="btns" type="submit"><i class="ti-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </aside>
                                 <aside class="single_sidebar_widget popular_post_widget">
                                     <h3 class="widget_title">Proyek Lainnya</h3>
                                     <div class="d-flex gap-2 media post_item">
                                         <img src="aset/absa.png" width="80">
                                         <div class="media-body">
-                                            <a href="detail_absa.html">
+                                            <a href="detail_yayasanabsa.html">
                                                 <h3>Yayasan Amara Bhawana Sastra</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -95,7 +125,6 @@
                                             <a href="detail_laundrybox.html">
                                                 <h3>Laundrybox</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -104,7 +133,6 @@
                                             <a href="detail_neurolinked.html">
                                                 <h3>Neurolinked</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -113,7 +141,6 @@
                                             <a href="detail_orosis.html">
                                                 <h3>Or-osis</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -122,11 +149,54 @@
                                             <a href="detail_dievas.html">
                                                 <h3>Dievas Travel</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                 </aside>
-
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="quote-wrapper mt-4">
+                        <div class="quotes">
+                            <div class="kegiatan-gallery">
+                                <h4 class="mb-5 text-center">Dokumentasi</h4>
+                                <div class="row g-3">
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_stc/beranda.png" class="glightbox" data-gallery="" data-title="" data-description="Beranda">
+                                                <img src="aset/dokumentasi_stc/beranda.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_stc/tentang.png" class="glightbox" data-gallery="" data-title="" data-description="Bagian tentang">
+                                                <img src="aset/dokumentasi_stc/tentang.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_stc/lomba.png" class="glightbox" data-gallery="" data-title="" data-description="Bagian Lomba">
+                                                <img src="aset/dokumentasi_stc/lomba.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_stc/dokumentasi.png" class="glightbox" data-gallery="" data-title="" data-description="Bagian dokumentasi">
+                                                <img src="aset/dokumentasi_stc/dokumentasi.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_stc/maps.png" class="glightbox" data-gallery="" data-title="" data-description="Bagian sponsor">
+                                                <img src="aset/dokumentasi_stc/maps.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -142,7 +212,7 @@
                     <span>© 2025 Sandy Dwiartha — Portofolio</span>
                     <ul class="d-flex flex-wrap gap-2">
                         <li>
-                            <a class="btn btn-square" href="https://wa.me/6281391527799"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/6281939716219"><i class="fa-brands fa-whatsapp"></i></a>
                         </li>
                         <li>
                             <a class="btn btn-square" href="https://www.instagram.com/kdksandy_/"><i class="fa-brands fa-instagram"></i></a>
@@ -162,11 +232,24 @@
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/typed/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         
         <!-- Custom Javascript -->
         <script src="js/main.js"></script>
     	<script src="js/slick.min.js"></script>
     	<script src="js/fresco.min.js"></script>
-        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const lightbox = GLightbox({
+                    selector: '.glightbox',
+                    touchNavigation: true,
+                    loop: true,
+                    zoomable: true,
+                    draggable: true,
+                });
+            });
+        </script>
+
     </body>
 </html>

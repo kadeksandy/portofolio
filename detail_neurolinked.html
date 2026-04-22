@@ -20,6 +20,7 @@
         
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
         <!-- Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -42,50 +43,77 @@
                     <span>Beranda <span class="icon">-></span> Detail Proyek </span>
                 </div>
             </div>
+
+            <nav class="sticky navbar">
+                <input type="checkbox" id="nav" class="hidden" />
+                <div class="nav">
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="index.html#beranda" class="nav__link">Beranda</a></li>
+                        <li class="nav__item"><a href="index.html#tentang" class="nav__link">Tentang</a></li>
+                        <li class="nav__item"><a href="index.html#keterampilan" class="nav__link">Keterampilan</a></li>
+                        <li class="nav__item"><a href="index.html#pendidikan" class="nav__link">Pendidikan</a></li>
+                        <li class="nav__item"><a href="index.html#karya" class="nav__link">Karya</a></li>
+                    </ul>
+                </div>
+            </nav>
             
-            <!-- Detail Proyek -->  
-            <div class="details"></div>
+            <!-- Detail Proyek -->
             <section class="blog_area single-post-area section-padding py-6" id="about">
                 <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-8 posts-list">
+                    <div class="row">
+                        <div class="col-lg-8">
                             <div class="single-post">
                                 <div class="feature-img kegiatan-cover">
                                     <img class="img-fluid" src="aset/neurolinked.png" alt="">
                                 </div>
 
                                 <div class="blog_details">
-                                    <h2>Neurolinked</h2>
-                                    <div class="ck-content ">
+                                    <div class="d-flex align-items-center">
+                                        <h2 class="m-0">Neurolinked</h2>
+                                        <a href="https://kadeksandy.github.io/neurolinked" class="btn btn-web ms-4" target="_blank" rel="noopener noreferrer">Menuju Website</a>
+                                    </div>
+                                    <div class="ck-content">
                                         <p>
-                                            Neurolinked merupakan proyek web desain yang dikembangkan untuk kebutuhan lomba dengan konsep platform edukasi dan kolaborasi berbasis teknologi.
-                                            Website ini dirancang untuk menampilkan ide, aspirasi, dan proyek dalam satu ekosistem digitalyang terstruktur.
+                                            <strong>NeuroLinked</strong> merupakan sebuah proyek studi kasus desain antarmuka (UI) dan pengalaman pengguna (UX) untuk platform kolaborasi masa depan. 
+                                            Proyek ini dirancang sebagai prototipe interaktif yang memvisualisasikan sebuah ekosistem digital untuk menghubungkan para inovator melalui bantuan kecerdasan buatan (AI)
+                                            Fokus utama dari proyek ini adalah menciptakan alur navigasi yang futuristik dan estetika visual yang modern untuk mempermudah pengguna dalam berbagi aspirasi serta membangun tim kolaboratif secara konseptual
                                         </p>
+                                        <h4>Fitur utama:</h4>
+                                        <ul>
+                                            <li>
+                                            <strong>AI Matcher:</strong> 
+                                                Perancangan antarmuka cerdas yang secara konseptual mendemonstrasikan bagaimana AI dapat merekomendasikan rekan kolaborasi berdasarkan 
+                                                keselarasan visi dan keahlian
+                                            </li>
+                                            <li>
+                                            <strong>Antarmuka Futuristik dan Responsif:</strong> 
+                                                Implementasi desain visual yang menonjolkan kesan teknologi tinggi dengan penggunaan animasi yang halus dan tata letak yang bersih 
+                                                guna memberikan pengalaman eksplorasi yang imersif
+                                            </li>
+                                            <li>
+                                            <strong>Manajemen Proyek:</strong> 
+                                                Visualisasi alat kolaborasi seperti pelacakan progres (progress tracking), ruang diskusi tim, 
+                                                dan metrik keberhasilan proyek yang disajikan dalam bentuk desain high-fidelity
+                                            </li>
+                                            <li>
+                                            <strong>Eksplorasi Ide Kreatif:</strong> 
+                                                Desain kartu proyek dan aspirasi yang informatif, memungkinkan pengguna untuk meninjau potensi inovasi secara mendalam melalui antarmuka yang terstruktur
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="blog_right_sidebar">
-                                <aside class="single_sidebar_widget search_widget">
-                                    <form action="" method="GET">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="q" class="form-control" placeholder="Search kegiatan">
-                                            <div class="input-group-append">
-                                                <button class="btns" type="submit"><i class="ti-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </aside>
                                 <aside class="single_sidebar_widget popular_post_widget">
                                     <h3 class="widget_title">Proyek Lainnya</h3>
                                     <div class="d-flex gap-2 media post_item">
                                         <img src="aset/absa.png" width="80">
                                         <div class="media-body">
-                                            <a href="detail_absa.html">
+                                            <a href="detail_yayasanabsa.html">
                                                 <h3>Yayasan Amara Bhawana Sastra</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -94,7 +122,6 @@
                                             <a href="detail_laundrybox.html">
                                                 <h3>Laundrybox</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -103,7 +130,6 @@
                                             <a href="detail_dievas.html">
                                                 <h3>Dievas Travel</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -112,7 +138,6 @@
                                             <a href="detail_orosis.html">
                                                 <h3>Or-osis</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -121,11 +146,102 @@
                                             <a href="detail_stc.html">
                                                 <h3>Stibajra Technology Competition</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                 </aside>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper mt-4">
+                        <div class="quotes">
+                            <div class="kegiatan-gallery">
+                                <h4 class="mb-5 text-center">Dokumentasi</h4>
+                                <div class="row g-3">
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/beranda.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/beranda.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/tentang.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/tentang.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/blog.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/blog.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/faq.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/faq.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/aspirasi.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/aspirasi.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/ai.png" class="glightbox" data-gallery="" data-title="" data-description=" ">
+                                                <img src="aset/dokumentasi_neurolinked/ai.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/detailaspirasi.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/detailaspirasi.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/buataspirasi.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/buataspirasi.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/project.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/project.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/detailproject.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/detailproject.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/buatproject.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/buatproject.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_neurolinked/login.png" class="glightbox" data-gallery="" data-title="" data-description="">
+                                                <img src="aset/dokumentasi_neurolinked/login.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -161,11 +277,24 @@
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/typed/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         
         <!-- Custom Javascript -->
         <script src="js/main.js"></script>
     	<script src="js/slick.min.js"></script>
     	<script src="js/fresco.min.js"></script>
-        
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const lightbox = GLightbox({
+                    selector: '.glightbox',
+                    touchNavigation: true,
+                    loop: true,
+                    zoomable: true,
+                    draggable: true,
+                });
+            });
+        </script>
+
     </body>
 </html>

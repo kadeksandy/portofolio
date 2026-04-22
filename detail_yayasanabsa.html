@@ -20,6 +20,7 @@
         
         <!-- Libraries Stylesheet -->
         <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" rel="stylesheet">
 
         <!-- Bootstrap Stylesheet -->
         <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -34,64 +35,93 @@
     <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
         <div class="bubble-bg"></div>
 
-        <div class="wrapper">
+        <div class="wrapper blog_area">
             <!-- Hero -->
             <div class="hero">
                 <h1>Yayasan ABSA</h1>
                 <div class="widget">
-                    <span>Beranda <span class="icon">-></span> Detail Proyek </span>
+                    <span>Beranda <span class="icon">></span> Detail Proyek </span>
                 </div>
             </div>
             
+            <!-- Navbar -->  
+            <nav class="sticky navbar">
+                <input type="checkbox" id="nav" class="hidden" />
+                <div class="nav">
+                    <ul class="nav__items">
+                        <li class="nav__item"><a href="index.html#beranda" class="nav__link">Beranda</a></li>
+                        <li class="nav__item"><a href="index.html#tentang" class="nav__link">Tentang</a></li>
+                        <li class="nav__item"><a href="index.html#keterampilan" class="nav__link">Keterampilan</a></li>
+                        <li class="nav__item"><a href="index.html#pendidikan" class="nav__link">Pendidikan</a></li>
+                        <li class="nav__item"><a href="index.html#karya" class="nav__link">Karya</a></li>
+                    </ul>
+                </div>
+            </nav>
+            
             <!-- Detail Proyek -->  
-            <div class="details"></div>
             <section class="blog_area single-post-area section-padding py-6" id="about">
                 <div class="container">
-                    <div class="row g-5 align-items-center">
-                        <div class="col-lg-8 posts-list">
+                    <div class="row">
+                        <div class="col-lg-8">
                             <div class="single-post">
                                 <div class="feature-img kegiatan-cover">
                                     <img class="img-fluid" src="aset/absa.png" alt="">
                                 </div>
-
                                 <div class="blog_details">
                                     <div class="d-flex align-items-center">
                                         <h2 class="m-0">Yayasan Amara Bhawana Sastra</h2>
-                                        <a href="https://www.yayasanabsa.com" class="btn btn-web ms-2">Menuju Website</a>
+                                        <a href="https://www.yayasanabsa.com" class="btn btn-web ms-4" target="_blank" rel="noopener noreferrer">Menuju Website</a>
                                     </div>
-                                    <div class="ck-content ">
+                                    <div class="ck-content">
                                         <p>
-                                            Website yayasan dikembangkan sebagai media informasi resmi untuk menampilkan profil, kegiatan, serta tujuan yayasan kepada masyarakat.
-                                            Sebelumnya, informasi yayasan hanya dapat diakses melalui sosial media saja, sehingga website ini diharapkan dapat menjadi sarana komunikasi dan dokumentasi yang lebih profesional.
-                                            <br>
-                                            Saya merancang website yayasan dengan fokus pada kejelasan informasi dan kemudahan navigasi bagi pengunjung. 
-                                            Melalui proyek ini, saya mengasah kemampuan dalam membangun website informatif yang mampu merepresentasikan identitas dan aktivitas sebuah organisasi secara profesional.
+                                            Proyek ini bertujuan untuk membangun kehadiran digital bagi <strong>Yayasan ABSA</strong>, 
+                                            sebuah organisasi di Bangli yang berfokus pada pendidikan karakter, pelestarian budaya Bali, dan aksi kemanusiaan.
+                                            Yayasan ini berdedikasi untuk memberikan akses pendidikan yang layak bagi 
+                                            anak-anak kurang mampu dan yatim piatu di Bali.
+                                            Platform ini dirancang untuk menjembatani antara pengelola yayasan dengan masyarakat luas guna meningkatkan transparansi dan kontribusi sosial.
                                         </p>
+                                        <h4>Fitur utama:</h4>
+                                        <ul>
+                                            <li>
+                                            <strong>Manajemen Kegiatan:</strong> 
+                                                Pengelolaan informasi mengenai seluruh kegiatan yayasan, program yang akan datang, 
+                                                serta kemudahan bagi pengelola untuk menambahkan konten kegiatan baru secara mandiri
+                                            </li>
+                                            <li>
+                                            <strong>Sistem Kontribusi Sosial:</strong> 
+                                                Memfasilitasi masyarakat yang ingin berkontribusi melalui fitur donasi dan pendaftaran 
+                                                relawan untuk mendukung aksi sosial seperti renovasi rumah atau bantuan pendidikan
+                                            </li>
+                                            <li>
+                                            <strong>Jejaring Kemitraan:</strong> 
+                                                Menampilkan daftar mitra strategis yang telah bekerja sama dengan yayasan 
+                                                untuk membangun kepercayaan publik dan kredibilitas organisasi.
+                                            </li>
+                                            <li>
+                                            <strong>Aksesibilitas Multibahasa:</strong> 
+                                                Dukungan antarmuka dua bahasa (Indonesia dan Inggris) guna menjangkau audiens internasional, 
+                                                selaras dengan visi yayasan dalam memperkenalkan budaya lokal kepada dunia
+                                            </li>
+                                            <li>
+                                            <strong>Integrasi Maps:</strong> 
+                                                Memudahkan pengguna menemukan lokasi fisik yayasan di Bangli, Bali, 
+                                                guna keperluan koordinasi atau kunjungan lapangan.
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4">
                             <div class="blog_right_sidebar">
-                                <aside class="single_sidebar_widget search_widget">
-                                    <form action="" method="GET">
-                                        <div class="input-group mb-3">
-                                            <input type="text" name="q" class="form-control" placeholder="Search kegiatan">
-                                            <div class="input-group-append">
-                                                <button class="btns" type="submit"><i class="ti-search"></i></button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </aside>
                                 <aside class="single_sidebar_widget popular_post_widget">
                                     <h3 class="widget_title">Proyek Lainnya</h3>
                                     <div class="d-flex gap-2 media post_item">
-                                        <img src="aset/dievas.png" width="80">
+                                        <img src="aset/stc.png" width="80">
                                         <div class="media-body">
-                                            <a href="detail_dievas.html">
-                                                <h3>Dievas Travel</h3>
+                                            <a href="detail_stc.html">
+                                                <h3>Stibajra Technology Competition</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -100,7 +130,6 @@
                                             <a href="detail_laundrybox.html">
                                                 <h3>Laundrybox</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -109,7 +138,6 @@
                                             <a href="detail_neurolinked.html">
                                                 <h3>Neurolinked</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
@@ -118,27 +146,75 @@
                                             <a href="detail_orosis.html">
                                                 <h3>Or-osis</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                     <div class="d-flex gap-2 media post_item">
-                                        <img src="aset/stc.png" width="80">
+                                        <img src="aset/dievas.png" width="80">
                                         <div class="media-body">
-                                            <a href="detail_stc.html">
-                                                <h3>Stibajra Technology Competition</h3>
+                                            <a href="detail_dievas.html">
+                                                <h3>Dievas Travel</h3>
                                             </a>
-                                            <!-- <p>{{ $item->tanggal_kegiatan->format('d M Y') }}</p> -->
                                         </div>
                                     </div>
                                 </aside>
-
+                            </div>
+                        </div>
+                    </div>
+                    <div class="quote-wrapper mt-4">
+                        <div class="quotes">
+                            <div class="kegiatan-gallery">
+                                <h4 class="mb-5 text-center">Dokumentasi</h4>
+                                <div class="row g-3">
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/donasi.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="Halaman donasi">
+                                                <img src="aset/dokumentasi_absa/donasi.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/kegiatan.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="halaman kegiatan">
+                                                <img src="aset/dokumentasi_absa/kegiatan.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/tentang.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="Halaman tentang">
+                                                <img src="aset/dokumentasi_absa/tentang.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/mitra.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="Sidebar mitra">
+                                                <img src="aset/dokumentasi_absa/mitra.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/semuakegiatan.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="halaman semua kegiatan">
+                                                <img src="aset/dokumentasi_absa/semuakegiatan.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-12">
+                                        <div class="gallery-item">
+                                            <a href="aset/dokumentasi_absa/sponsor.png" class="glightbox" data-gallery="kegiatan" data-title="yayasan ABSA" data-description="halaman sponsor">
+                                                <img src="aset/dokumentasi_absa/sponsor.png" alt="" loading="lazy">
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
         </div>
+
         
         <!-- Footer -->
         <footer>
@@ -147,7 +223,7 @@
                     <span>© 2025 Sandy Dwiartha — Portofolio</span>
                     <ul class="d-flex flex-wrap gap-2">
                         <li>
-                            <a class="btn btn-square" href="https://wa.me/6281391527799"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a class="btn btn-square" href="https://wa.me/6281939716219"><i class="fa-brands fa-whatsapp"></i></a>
                         </li>
                         <li>
                             <a class="btn btn-square" href="https://www.instagram.com/kdksandy_/"><i class="fa-brands fa-instagram"></i></a>
@@ -167,11 +243,24 @@
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/typed/typed.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         
         <!-- Custom Javascript -->
         <script src="js/main.js"></script>
     	<script src="js/slick.min.js"></script>
     	<script src="js/fresco.min.js"></script>
         
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const lightbox = GLightbox({
+                    selector: '.glightbox',
+                    touchNavigation: true,
+                    loop: true,
+                    zoomable: true,
+                    draggable: true,
+                });
+            });
+        </script>
+
     </body>
 </html>
