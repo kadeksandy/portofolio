@@ -31,7 +31,7 @@
 
     </head>
 
-    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
+    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="51">
         <div class="bubble-bg"></div>
 
         <div class="wrapper">
@@ -61,16 +61,16 @@
             </div>
 
             <!-- Navbar -->
-            <nav class="sticky navbar">
+            <nav class="sticky navbar" id="navbar">
                 <input type="checkbox" id="nav" class="hidden" />
                 <!-- <label for="nav" class="nav__open"><i></i><i></i><i></i></label> -->
                 <div class="nav">
-                    <ul class="nav__items">
-                        <li class="nav__item"><a href="#home" class="nav__link">Beranda</a></li>
-                        <li class="nav__item"><a href="#tentang" class="nav__link">Tentang</a></li>
-                        <li class="nav__item"><a href="#keterampilan" class="nav__link">Keterampilan</a></li>
-                        <li class="nav__item"><a href="#pendidikan" class="nav__link">Pendidikan</a></li>
-                        <li class="nav__item"><a href="#karya" class="nav__link">Karya</a></li>
+                    <ul class="nav-items">
+                        <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
+                        <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
+                        <li class="nav-item"><a href="#keterampilan" class="nav-link">Keterampilan</a></li>
+                        <li class="nav-item"><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
+                        <li class="nav-item"><a href="#karya" class="nav-link">Karya</a></li>
                     </ul>
                 </div>
             </nav>
@@ -148,65 +148,47 @@
                         <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Keahlian & Pengalaman Teknis</h2>
                     </div>
                     <div class="row justify-content-center">
-                        <div class="col-sm-12 col-md-4 pt-4">
+                        <div class="col-sm-12 col-md-3 pt-4">
                             <div class="skill skill-content h-100">
                                 <div class="skill-content-icon">
                                     <i class="fa-brands fa-figma fa-2x mb-3"></i>
                                 </div>
                                 <p> 
-                                    Saya memanfaatkan Figma untuk merancang antarmuka pengguna dan pengalaman pengguna, mencakup perencanaan tata letak (layout), 
-                                    alur navigasi, hingga desain visual. Pengalaman ini mengasah kemampuan saya dalam menerjemahkan kebutuhan pengguna menjadi rancangan yang fungsional, konsisten, 
-                                    dan siap diimplementasikan ke tahap pengembangan perangkat lunak.
+                                    Memanfaatkan Figma untuk merancang antarmuka pengguna dan pengalaman pengguna, mencakup perencanaan tata letak, 
+                                    alur navigasi, hingga desain visual.
                                     <!-- <a href="https://www.figma.com/design/Y5zWeLDyGh8dz1opy6zENy/Proyek---TRIFY?t=7dqlq2C5CS06XfUO-1" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 pt-4">
+                        <div class="col-sm-12 col-md-3 pt-4">
                             <div class="skill skill-content h-100">
                                 <div class="skill-content-icon">
                                     <i class="fa-brands fa-laravel fa-2x mb-3"></i>
                                 </div>
                                 <p> 
-                                    Dalam pengembangan aplikasi web, saya mengandalkan framework Laravel dengan fokus pada manajemen basis data yang efisien dan logika bisnis yang sistematis. 
-                                    Saya terbiasa membangun sistem pendukung operasional yang memiliki struktur sisi backend yang rapi, andal, 
-                                    serta mudah untuk dikembangkan lebih lanjut maupun dipelihara.
+                                    Mengandalkan framework Laravel dengan fokus pada manajemen basis data yang efisien serta mudah untuk dikembangkan lebih lanjut.
                                     <!-- <a href="https://ga.dievastravel.com/login" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 pt-4">
-                            <div class="skill skill-content h-100">
-                                <div class="skill-content-icon">
-                                    <i class="bi bi-code-slash fa-2x"></i>
-                                </div>
-                                <p> 
-                                    Saya menguasai HTML, CSS, dan JavaScript sebagai pilar utama dalam membangun fondasi website. 
-                                    Fokus saya pada implementasi desain yang responsif di berbagai perangkat, serta menciptakan interaksi pengguna yang dinamis. 
-                                    <!-- <a href="" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-4 pt-4">
+                        <div class="col-sm-12 col-md-3 pt-4">
                             <div class="skill skill-content h-100">
                                 <div class="skill-content-icon">
                                     <i class="bi bi-credit-card fa-2x"></i>
                                 </div>
                                 <p> 
-                                    Saya memiliki pengalaman dalam mengeksplorasi dan mengimplementasikan payment gateway khususnya Xendit untuk memfasilitasi transaksi digital dalam aplikasi. 
-                                    Proses ini telah melatih kemampuan saya dalam memahami alur autentikasi API, penanganan callback, serta sinkronisasi status pembayaran guna menjamin integritas data transaksi dalam sistem.
+                                    Memiliki pengalaman dalam eksplorasi dan implementasi payment gateway khususnya Xendit untuk memfasilitasi transaksi digital dalam aplikasi. 
                                     <!-- <a href="" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
                                 </p>
                             </div>
                         </div>
-                        <div class="col-sm-12 col-md-4 pt-4">
+                        <div class="col-sm-12 col-md-3 pt-4">
                             <div class="skill skill-content h-100">
                                 <div class="skill-content-icon">
                                     <i class="bi bi-bell fa-2x "></i>
                                 </div>
                                 <p> 
-                                    Saya mampu mengembangkan fitur notifikasi secara real-time dengan mengintegrasikan Telegram Bot API ke dalam sistem web. 
-                                    Fitur ini dirancang untuk memberikan pembaruan informasi instan langsung ke perangkat pengguna, seperti peringatan otomatis pada suatu aktivitas atau pembaruan status layanan. 
-                                    Kemampuan ini memungkinkan terciptanya sistem monitoring yang lebih responsif dan mudah diakses.
+                                    Mampu mengembangkan fitur notifikasi secara real-time dengan mengintegrasikan Telegram Bot API ke dalam sistem web. 
                                     <!-- <a href="" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
                                 </p>
                             </div>
@@ -240,10 +222,10 @@
                                 <div class="timeline-right ck-content">
                                     <h4>Pengalaman Organisasi :</h4>
                                     <p>Berperan aktif dalam Himpunan Mahasiswa sebagai wadah pengembangan diri, dengan fokus pada koordinasi program kerja, diskusi internal, 
-                                    serta pengasahan soft skills yang mencakup komunikasi, kolaborasi tim, dan manajerial organisasi</p>
+                                    serta pengasahan soft skills yang mencakup komunikasi, kolaborasi tim, dan manajerial organisasi.</p>
                                     <h4>Pengembangan Proyek :</h4>
-                                    <p>Mengembangkan berbagai solusi digital berbasis web, termasuk sistem manajemen layanan laundry terintegrasi (Laundrybox) dan platform profil organisasi (Yayasan ABSA). 
-                                    Fokus utama meliputi perancangan antarmuka pengguna (UI/UX), pengelolaan fungsionalitas sistem, serta implementasi solusi teknologi yang selaras dengan kebutuhan pengguna</p>
+                                    <p>Mengembangkan berbagai solusi digital berbasis web, diantaranya membuat sistem manajemen rental kendaraan, manajemen layanan laundry dan platform profil organisasi. 
+                                    Fokus utama meliputi perancangan antarmuka pengguna, pengelolaan fungsi sistem, serta implementasi solusi teknologi yang dibutuhkan pengguna.</p>
                                 </div>
                             </div>
 
@@ -262,14 +244,14 @@
                                 <div class="timeline-right ck-content">
                                     <h4>Pengalaman Organisasi :</h4>
                                     <p>Berpartisipasi aktif dalam organisasi OSIS dengan terlibat dalam perencanaan dan pelaksanaan berbagai agenda sekolah. 
-                                    Bertanggung jawab dalam mendukung kebutuhan digital dan dokumentasi untuk memastikan kelancaran program kerja organisasi</p>
+                                    Bertanggung jawab dalam mendukung kebutuhan digital dan dokumentasi untuk memastikan kelancaran program kerja organisasi.</p>
                                     <h4>Pengembangan Proyek :</h4>
-                                    <p>Bertanggung jawab atas pengembangan frontend website OSIS untuk ajang lomba Stibajra Technology Competition (STC) dan Open Recruitment (OR). 
-                                    Fokus pengerjaan mencakup optimalisasi struktur konten, estetika antarmuka, serta peningkatan aksesibilitas informasi bagi siswa maupun panitia kegiatan</p>
+                                    <p>Bertanggung jawab atas pengembangan frontend website OSIS untuk ajang lomba Stibajra Technology Competition dan Open Recruitment OSIS. 
+                                    Fokus pengerjaan mencakup optimalisasi struktur konten, estetika antarmuka, serta peningkatan akses informasi bagi siswa maupun panitia kegiatan.</p>
                                 </div>
                             </div>
 
-                            </div>
+                        </div>
                         <!-- <div class="row my-2">
                             <div class="col-sm-12 col-md-6">
                                 <div class="pendidikan-content-edu">
@@ -435,6 +417,7 @@
         </footer>
 
         <!-- JavaScript Libraries -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="lib/wow/wow.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
