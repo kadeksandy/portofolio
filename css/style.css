@@ -2112,6 +2112,10 @@ a:hover img {
   transition: .5s;
 }
 
+.team-item .team-text h5 {
+  font-size: 18px;
+}
+
 .team-item:hover .team-text {
   bottom: 10px;
   opacity: 1;
