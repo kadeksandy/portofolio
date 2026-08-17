@@ -443,13 +443,14 @@ p {
 
 
 .single-post-area .quote-wrapper {
-  background: rgba(130, 139, 178, 0.1);
+  background: #e8ebf7;
   padding: 15px;
   line-height: 1.733;
   color: #888888;
   font-style: italic;
   margin-top: 25px;
-  margin-bottom: 25px
+  margin-bottom: 25px;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -461,6 +462,7 @@ p {
 .single-post-area .quotes {
   background: #fff;
   padding: 15px 15px 15px 20px;
+  border-radius: 10px;
 }
 
 @media (min-width: 768px) {
@@ -1422,34 +1424,38 @@ background-color: #f4f6ff;
 }
 
 .blog_right_sidebar .post_category_widget .cat-list li:last-child {
-    border-bottom: 0
+  border-bottom: 0
 }
 
 .blog_right_sidebar .post_category_widget .cat-list li a {
-    font-size: 14px;
-    line-height: 20px;
-    color: #888888
+  font-size: 14px;
+  line-height: 20px;
+  color: #888888
 }
 
 .blog_right_sidebar .post_category_widget .cat-list li a p {
-    margin-bottom: 0px
+  margin-bottom: 0px
 }
 
 .blog_right_sidebar .post_category_widget .cat-list li+li {
-    padding-top: 15px
+  padding-top: 15px
+}
+
+.media-img img{
+  border-radius: 4px;
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body {
-    justify-content: center;
-    align-self: center;
-    padding-left: 20px
+  justify-content: center;
+  align-self: center;
+  padding-left: 20px
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body h3 {
-    font-size: 16px;
-    line-height: 20px;
-    margin-bottom: 6px;
-    transition: all 0.3s linear
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 6px;
+  transition: all 0.3s linear
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body a:hover {
@@ -1457,341 +1463,329 @@ background-color: #f4f6ff;
 }
 
 .blog_right_sidebar .popular_post_widget .post_item .media-body p {
-    font-size: 14px;
-    line-height: 21px;
-    margin-bottom: 0px
+  font-size: 14px;
+  line-height: 21px;
+  margin-bottom: 0px
 }
 
 .blog_right_sidebar .popular_post_widget .post_item+.post_item {
-    margin-top: 20px
+  margin-top: 20px
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li {
-    display: inline-block
+  display: inline-block
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a {
-    display: inline-block;
-    border: 1px solid #eeeeee;
-    background: #fff;
-    padding: 4px 20px;
-    margin-bottom: 8px;
-    margin-right: 3px;
-    transition: all 0.3s ease 0s;
-    color: #888888;
-    font-size: 13px
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  background: #fff;
+  padding: 4px 20px;
+  margin-bottom: 8px;
+  margin-right: 3px;
+  transition: all 0.3s ease 0s;
+  color: #888888;
+  font-size: 13px
 }
 
 .blog_right_sidebar .tag_cloud_widget ul li a:hover {
-    background: #ff2143;
-    color: #fff !important;
-    -webkit-text-fill-color: #fff;
-    text-decoration: none;
-    -webkit-transition: 0.5s;
-    transition: 0.5s
+  background: #ff2143;
+  color: #fff !important;
+  -webkit-text-fill-color: #fff;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s
 }
 
 .blog_right_sidebar .instagram_feeds .instagram_row {
-    display: flex;
-    margin-right: -6px;
-    margin-left: -6px
+  display: flex;
+  margin-right: -6px;
+  margin-left: -6px
 }
 
 .blog_right_sidebar .instagram_feeds .instagram_row li {
-    width: 33.33%;
-    float: left;
-    padding-right: 6px;
-    padding-left: 6px;
-    margin-bottom: 15px
+  width: 33.33%;
+  float: left;
+  padding-right: 6px;
+  padding-left: 6px;
+  margin-bottom: 15px
 }
 
 .blog_right_sidebar .br {
-    width: 100%;
-    height: 1px;
-    background: #eee;
-    margin: 30px 0px
+  width: 100%;
+  height: 1px;
+  background: #eee;
+  margin: 30px 0px
 }
 
 .blog-pagination {
-    margin-top: 80px
+  margin-top: 80px
 }
 
 .blog-pagination .page-link {
-    font-size: 14px;
-    position: relative;
-    display: block;
-    padding: 0;
-    text-align: center;
-    margin-left: -1px;
-    line-height: 45px;
-    width: 45px;
-    height: 45px;
-    border-radius: 0 !important;
-    color: #8a8a8a;
-    border: 1px solid #f0e9ff;
-    margin-right: 10px
+  font-size: 14px;
+  position: relative;
+  display: block;
+  padding: 0;
+  text-align: center;
+  margin-left: -1px;
+  line-height: 45px;
+  width: 45px;
+  height: 45px;
+  border-radius: 0 !important;
+  color: #8a8a8a;
+  border: 1px solid #f0e9ff;
+  margin-right: 10px
 }
 
 .blog-pagination .page-link i,
 .blog-pagination .page-link span {
-    font-size: 13px
+  font-size: 13px
 }
 
 .blog-pagination .page-item.active .page-link {
-    background-color: #fbf9ff;
-    border-color: #f0e9ff;
-    color: #888888
+  background-color: #fbf9ff;
+  border-color: #f0e9ff;
+  color: #888888
 }
 
 .blog-pagination .page-item:last-child .page-link {
-    margin-right: 0
+  margin-right: 0
 }
 
 .single-post-area .blog_details {
-    box-shadow: none;
-    padding: 0
+  box-shadow: none;
+  padding: 0
 }
 
 .single-post-area .social-links {
-    padding-top: 10px
+  padding-top: 10px
 }
 
 .single-post-area .social-links li {
-    display: inline-block;
-    margin-bottom: 10px
+  display: inline-block;
+  margin-bottom: 10px
 }
 
 .single-post-area .social-links li a {
-    color: #cccccc;
-    padding: 7px;
-    font-size: 14px;
-    transition: all 0.2s linear
+  color: #cccccc;
+  padding: 7px;
+  font-size: 14px;
+  transition: all 0.2s linear
 }
 
 .single-post-area .blog_details {
-    padding-top: 26px
+  padding-top: 26px
 }
 
 .single-post-area .blog_details p {
-    margin-bottom: 20px;
-    font-size: 15px
+  margin-bottom: 20px;
+  font-size: 15px
 }
 
 .single-post-area .quote-wrapper {
-    background: rgba(130, 139, 178, 0.1);
-    padding: 15px;
-    line-height: 1.733;
-    color: #888888;
-    font-style: italic;
-    margin-top: 25px;
-    margin-bottom: 25px
+  background: rgba(130, 139, 178, 0.1);
+  padding: 15px;
+  line-height: 1.733;
+  color: #888888;
+  font-style: italic;
+  margin-top: 25px;
+  margin-bottom: 25px
 }
 
 @media (min-width: 768px) {
-  .single-post-area .quote-wrapper {
-    padding: 30px
-  }
+.single-post-area .quote-wrapper {
+  padding: 30px
 }
-
-.single-post-area .quotes {
-  background: #fff;
-  padding: 15px 15px 15px 20px;
 }
-
-@media (min-width: 768px) {
-  .single-post-area .quotes {
-    padding: 25px 25px 25px 30px
-  }
-}
-
 
 .single-post-area .thumb .overlay-bg {
-    background: rgba(0, 0, 0, 0.8)
+  background: rgba(0, 0, 0, 0.8)
 }
 
 .single-post-area .navigation-top {
-    padding-top: 15px;
-    border-top: 1px solid #f0e9ff
+  padding-top: 15px;
+  border-top: 1px solid #f0e9ff
 }
 
 .single-post-area .navigation-top p {
-    margin-bottom: 0
+  margin-bottom: 0
 }
 
 .single-post-area .navigation-top .like-info {
-    font-size: 14px
+  font-size: 14px
 }
 
 .single-post-area .navigation-top .like-info i,
 .single-post-area .navigation-top .like-info span {
-    font-size: 16px;
-    margin-right: 5px
+  font-size: 16px;
+  margin-right: 5px
 }
 
 .single-post-area .navigation-top .comment-count {
-    font-size: 14px
+  font-size: 14px
 }
 
 .single-post-area .navigation-top .comment-count i,
 .single-post-area .navigation-top .comment-count span {
-    font-size: 16px;
-    margin-right: 5px
+  font-size: 16px;
+  margin-right: 5px
 }
 
 .single-post-area .navigation-top .social-icons li {
-    display: inline-block;
-    margin-right: 15px
+  display: inline-block;
+  margin-right: 15px
 }
 
 .single-post-area .navigation-top .social-icons li:last-child {
-    margin: 0
+  margin: 0
 }
 
 .single-post-area .navigation-top .social-icons li i,
 .single-post-area .navigation-top .social-icons li span {
-    font-size: 14px;
-    color: #999999
+  font-size: 14px;
+  color: #999999
 }
 
 .single-post-area .blog-author {
-    padding: 40px 30px;
-    background: #fbf9ff;
-    margin-top: 50px
+  padding: 40px 30px;
+  background: #fbf9ff;
+  margin-top: 50px
 }
 
 @media (max-width: 600px) {
-    .single-post-area .blog-author {
-        padding: 20px 8px
-    }
+  .single-post-area .blog-author {
+    padding: 20px 8px
+  }
 }
 
 .single-post-area .blog-author img {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    margin-right: 30px
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  margin-right: 30px
 }
 
 @media (max-width: 600px) {
-    .single-post-area .blog-author img {
-        margin-right: 15px;
-        width: 45px;
-        height: 45px
-    }
+  .single-post-area .blog-author img {
+    margin-right: 15px;
+    width: 45px;
+    height: 45px
+  }
 }
 
 .single-post-area .blog-author a {
-    display: inline-block
+  display: inline-block
 }
 
 .single-post-area .blog-author a:hover {
-    color: #ff2143
+  color: #ff2143
 }
 
 .single-post-area .blog-author p {
-    margin-bottom: 0;
-    font-size: 15px
+  margin-bottom: 0;
+  font-size: 15px
 }
 
 .single-post-area .blog-author h4 {
-    font-size: 16px
+  font-size: 16px
 }
 
 .single-post-area .navigation-area {
-    border-bottom: 1px solid #eee;
-    padding-bottom: 30px;
-    margin-top: 55px
+  border-bottom: 1px solid #eee;
+  padding-bottom: 30px;
+  margin-top: 55px
 }
 
 .single-post-area .navigation-area p {
-    margin-bottom: 0px
+  margin-bottom: 0px
 }
 
 .single-post-area .navigation-area h4 {
-    font-size: 18px;
-    line-height: 25px
+  font-size: 18px;
+  line-height: 25px
 }
 
 .single-post-area .navigation-area .nav-left {
-    text-align: left
+  text-align: left
 }
 
 .single-post-area .navigation-area .nav-left .thumb {
-    margin-right: 20px;
-    background: #000
+  margin-right: 20px;
+  background: #000
 }
 
 .single-post-area .navigation-area .nav-left .thumb img {
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s
 }
 
 .single-post-area .navigation-area .nav-left .lnr {
-    margin-left: 20px;
-    opacity: 0;
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s
+  margin-left: 20px;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s
 }
 
 .single-post-area .navigation-area .nav-left:hover .lnr {
-    opacity: 1
+  opacity: 1
 }
 
 .single-post-area .navigation-area .nav-left:hover .thumb img {
-    opacity: .5
+  opacity: .5
 }
 
 @media (max-width: 767px) {
-    .single-post-area .navigation-area .nav-left {
-        margin-bottom: 30px
-    }
+  .single-post-area .navigation-area .nav-left {
+    margin-bottom: 30px
+  }
 }
 
 .single-post-area .navigation-area .nav-right {
-    text-align: right
+  text-align: right
 }
 
 .single-post-area .navigation-area .nav-right .thumb {
-    margin-left: 20px;
-    background: #000
+  margin-left: 20px;
+  background: #000
 }
 
 .single-post-area .navigation-area .nav-right .thumb img {
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s
 }
 
 .single-post-area .navigation-area .nav-right .lnr {
-    margin-right: 20px;
-    opacity: 0;
-    -webkit-transition: all .3s ease-out 0s;
-    -moz-transition: all .3s ease-out 0s;
-    -ms-transition: all .3s ease-out 0s;
-    -o-transition: all .3s ease-out 0s;
-    transition: all .3s ease-out 0s
+  margin-right: 20px;
+  opacity: 0;
+  -webkit-transition: all .3s ease-out 0s;
+  -moz-transition: all .3s ease-out 0s;
+  -ms-transition: all .3s ease-out 0s;
+  -o-transition: all .3s ease-out 0s;
+  transition: all .3s ease-out 0s
 }
 
 .single-post-area .navigation-area .nav-right:hover .lnr {
-    opacity: 1
+  opacity: 1
 }
 
 .single-post-area .navigation-area .nav-right:hover .thumb img {
-    opacity: .5
+  opacity: .5
 }
 
 @media (max-width: 991px) {
-    .single-post-area .sidebar-widgets {
-        padding-bottom: 0px
-    }
+  .single-post-area .sidebar-widgets {
+    padding-bottom: 0px
+  }
 }
 /* ===============================
   ABOUT
