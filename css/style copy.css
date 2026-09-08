@@ -230,6 +230,75 @@ p {
 	font-size: 0.99rem;
 }
 
+@media (min-width: 800px) {
+	.navbar,
+	.nav-items {
+		display: flex;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+    justify-content: space-between;
+	}
+}
+
+@media (max-width: 800px) {
+	.navbar,
+	.nav-items {
+		display: flex;
+	}
+
+	.navbar {
+		flex-direction: column;
+		align-items: center;
+    justify-content: space-between;
+	}
+
+	.nav-items .nav-link {
+    font-size: 0.65rem;
+		transition: all 0.2s ease;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.nav .nav-items {
+    font-size: 0.60rem;
+	}
+
+	.nav-items .nav-link {
+    font-size: 0.70rem;
+		transition: all 0.2s ease;
+	}
+  .nav-item:not(:last-child)::after {
+    content: "|";
+    margin: 0 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
+@media screen and (max-width: 430px) {
+	.nav-items .nav-link {
+    font-size: 0.50rem;
+		transition: all 0.2s ease;
+	}
+}
+
+@media screen and (max-width: 350px) {
+	.nav .nav-items {
+    font-size: 0.30rem;
+	}
+	.nav-items .nav-link {
+    font-size: 0.45rem;
+		transition: all 0.2s ease;
+	}
+  .nav-item:not(:last-child)::after {
+    content: "|";
+    margin: 0 5px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+}
+
 
 #nav:checked+.nav__open {
 	transform: rotate(45deg);
@@ -267,224 +336,6 @@ p {
 }
 
 
-/* =========================================
-   HERO
-========================================= */
-
-.hero-section {
-  position: relative;
-  width: 100%;
-  min-height: 100vh;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  overflow: hidden;
-  /* sesuaikan dengan background portfolio kamu */
-  background: #08265f;
-}
-
-
-/* =========================================
-   HERO CONTENT - KIRI
-========================================= */
-.hero-content-wrapper {
-  position: relative;
-  z-index: 5;
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
-  padding-left: clamp(40px, 8vw, 140px);
-  padding-right: 40px;
-}
-
-
-.hero-content {
-    display: flex;
-    flex-direction: column;
-
-    align-items: flex-start;
-    text-align: left;
-}
-
-
-/* =========================================
-   TEXT
-========================================= */
-
-.hero-content h3 {
-    margin-bottom: 15px;
-}
-
-.hero-content h1 {
-    margin-bottom: 10px;
-}
-
-.hero-content h2 {
-    margin: 0;
-}
-
-
-/* =========================================
-   TYPING
-========================================= */
-
-.typing-wrapper {
-    display: flex;
-    align-items: center;
-
-    min-height: 35px;
-}
-
-
-/* cursor */
-
-.cursor {
-    display: inline-block;
-
-    margin-left: 6px;
-
-    font-weight: 400;
-
-    animation: cursorBlink 0.8s infinite;
-}
-
-
-@keyframes cursorBlink {
-
-    0%,
-    50% {
-        opacity: 1;
-    }
-
-    51%,
-    100% {
-        opacity: 0;
-    }
-
-}
-
-
-/* =========================================
-   PROJECT SHOWCASE - KANAN
-========================================= */
-
-.project-showcase {
-    position: relative;
-
-    width: 100%;
-    height: 100vh;
-
-    overflow: hidden;
-}
-
-
-/* =========================================
-   SLIDER
-========================================= */
-
-.project-slider {
-    position: relative;
-
-    width: 100%;
-    height: 100%;
-}
-
-
-/* =========================================
-   PROJECT SLIDE
-========================================= */
-.project-slide {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(1.05);
-  transition:
-      opacity 1s ease,
-      transform 1.5s cubic-bezier(.22, .61, .36, 1),
-      visibility 1s ease;
-}
-
-
-/* ACTIVE */
-.project-slide.active {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
-}
-
-
-/* =========================================
-   PROJECT IMAGE
-========================================= */
-.project-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-
-/* =========================================
-   FADE DI SISI KIRI
-========================================= */
-.project-showcase::before {
-  content: "";
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  left: 0;
-  width: 35%;
-  height: 100%;
-  background: linear-gradient(
-      to right,
-      #08265f 0%,
-      rgba(8, 38, 95, 0.95) 20%,
-      rgba(8, 38, 95, 0.65) 45%,
-      rgba(8, 38, 95, 0.25) 70%,
-      rgba(8, 38, 95, 0) 100%
-  );
-  pointer-events: none;
-}
-
-
-/* =========================================
-   PROJECT INFO
-========================================= */
-.project-info {
-  position: absolute;
-  z-index: 3;
-  left: 50px;
-  bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  color: #fff;
-  opacity: 0;
-  transform: translateY(20px);
-  transition:
-      opacity 0.8s ease 0.3s,
-      transform 0.8s ease 0.3s;
-}
-
-
-.project-slide.active .project-info {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-
-.project-info span {
-  font-size: 2rem;
-  font-weight: 700;
-}
-
-
-.project-info small {
-  margin-top: 5px;
-  font-size: 0.95rem;
-  opacity: 0.8;
-}
 
 /* ===============================
   HEADER
@@ -1002,8 +853,24 @@ p {
     top: 7px
 }
 
+@media (max-width: 1199px) {
+    .single-blog .tag {
+        margin-right: 8px
+    }
+
+    .single-blog .tag:after {
+        display: none
+    }
+}
+
 .single-blog .likes {
     margin-right: 16px
+}
+
+@media (max-width: 800px) {
+    .single-blog {
+        margin-bottom: 30px
+    }
 }
 
 .single-blog .single-blog-content {
@@ -1021,6 +888,12 @@ p {
     margin-right: 7px
 }
 
+@media (max-width: 1199px) {
+    .single-blog .single-blog-content {
+        padding: 15px
+    }
+}
+
 .single-blog:hover .thumb:after {
     opacity: .7;
     -webkit-transition: all .3s ease-out 0s;
@@ -1030,6 +903,18 @@ p {
     transition: all .3s ease-out 0s
 }
 
+@media (max-width: 1199px) {
+  .single-blog h4 {
+      transition: all 300ms linear 0s;
+      border-bottom: 1px solid #dfdfdf;
+      padding-bottom: 14px;
+      margin-bottom: 12px
+  }
+
+  .single-blog h4 a {
+      font-size: 18px
+  }
+}
 
 .full_image.single-blog {
   position: relative
@@ -2336,212 +2221,9 @@ body.tight .wrapper {
   margin-bottom: 10px;
 }
 
-/* ========================================= 
-  RESPONSIVE
-========================================= */
-@media (max-width: 1199px) {
-  .single-blog h4 {
-    transition: all 300ms linear 0s;
-    border-bottom: 1px solid #dfdfdf;
-    padding-bottom: 14px;
-    margin-bottom: 12px
-  }
-
-  .single-blog h4 a {
-    font-size: 18px
-  }
-
-  .single-blog .single-blog-content {
-    padding: 15px
-  }
-  
-  .single-blog .tag {
-    margin-right: 8px
-  }
-  
-  .single-blog .tag:after {
-    display: none
-  }
-}
-
+/* RESPONSIVE */
 @media (max-width: 500px) {
   h1 {
     font-size: 20px;
-  }
-}
-
-/* =========================================
-   TABLET
-========================================= */
-@media (max-width: 991.98px) {
-  .hero-section {
-    grid-template-columns: 1fr;
-    min-height: auto;
-  }
-
-    /* HERO */
-
-    .hero-content-wrapper {
-        min-height: 70vh;
-
-        padding: 70px 30px;
-
-        justify-content: center;
-    }
-
-
-    .hero-content {
-        align-items: center;
-
-        text-align: center;
-    }
-
-
-    /* PROJECT */
-
-    .project-showcase {
-        height: 65vh;
-    }
-
-
-    /* fade berubah menjadi fade dari atas */
-
-    .project-showcase::before {
-
-        width: 100%;
-        height: 35%;
-
-        top: 0;
-        left: 0;
-
-        background: linear-gradient(
-            to bottom,
-
-            #08265f 0%,
-
-            rgba(8, 38, 95, 0.9) 25%,
-
-            rgba(8, 38, 95, 0.4) 65%,
-
-            rgba(8, 38, 95, 0) 100%
-        );
-    }
-
-
-    .project-info {
-        left: 30px;
-        bottom: 30px;
-    }
-
-}
-
-
-/* =========================================
-   MOBILE
-========================================= */
-
-@media (max-width: 576px) {
-
-    .hero-content-wrapper {
-        min-height: 75vh;
-
-        padding: 50px 20px;
-    }
-
-
-    .hero-content h1 {
-        font-size: 2rem;
-    }
-
-
-    .hero-content h3 {
-        font-size: 1.1rem;
-    }
-
-
-    .hero-content h2 {
-        font-size: 1.2rem;
-    }
-
-
-    .project-showcase {
-        height: 55vh;
-    }
-
-
-    .project-info {
-        left: 20px;
-        bottom: 20px;
-    }
-
-
-    .project-info span {
-        font-size: 1.4rem;
-    }
-
-
-    .project-info small {
-        font-size: 0.8rem;
-    }
-
-}
-
-@media (max-width: 800px) {
-	.navbar,
-	.nav-items {
-		display: flex;
-	}
-
-	.navbar {
-		flex-direction: column;
-		align-items: center;
-    justify-content: space-between;
-	}
-
-	.nav-items .nav-link {
-    font-size: 0.65rem;
-    transition: all 0.2s ease;
-	}
-
-    .single-blog {
-    margin-bottom: 30px
-  }
-}
-
-@media screen and (max-width: 760px) {
-	.nav .nav-items {
-    font-size: 0.60rem;
-	}
-
-	.nav-items .nav-link {
-    font-size: 0.70rem;
-		transition: all 0.2s ease;
-	}
-  .nav-item:not(:last-child)::after {
-    content: "|";
-    margin: 0 5px;
-    color: rgba(255, 255, 255, 0.5);
-  }
-}
-
-@media screen and (max-width: 430px) {
-	.nav-items .nav-link {
-    font-size: 0.50rem;
-		transition: all 0.2s ease;
-	}
-}
-
-@media screen and (max-width: 350px) {
-	.nav .nav-items {
-    font-size: 0.30rem;
-	}
-	.nav-items .nav-link {
-    font-size: 0.45rem;
-		transition: all 0.2s ease;
-	}
-  .nav-item:not(:last-child)::after {
-    content: "|";
-    margin: 0 5px;
-    color: rgba(255, 255, 255, 0.5);
   }
 }
