@@ -1,439 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <title>Portofolio - Sandy</title>
-        <meta content="width=device-width, initial-scale=1.0" name="viewport">
-        <meta content="" name="keywords">
-        <meta content="" name="description">
-        <!-- <link rel="shortcut icon" type="image/x-icon" href="aset/hero.jpg">
-        <link rel="apple-touch-icon" href="aset/hero.jpg"> -->
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandy Dwiartha — Web Developer</title>
+    <meta name="description" content="Portofolio Sandy Dwiartha — Web Developer yang berfokus pada pengembangan website, backend, dan sistem digital.">
+    <meta name="theme-color" content="#071f4f">
 
-        <!-- Google Web Fonts -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
-
-        <!-- Icon Font Stylesheet -->
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
-        
-        <!-- Libraries Stylesheet -->
-        <link href="lib/animate/animate.min.css" rel="stylesheet">
-
-        <!-- Bootstrap Stylesheet -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-        <!-- Custom Stylesheet -->
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/fresco.css" rel="stylesheet"/>
-        <link href="css/slicknav.min.css" rel="stylesheet"/>
-
-    </head>
-
-    <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="51">
-        <div class="bubble-bg"></div>
-
-        <div class="wrapper">
-            <!-- Hero -->
-            <div class="container-fluid bg-light mt-0" id="home">
-                <div class="container">
-                    <div class="row g-5 align-items-center" style="height: 100%;">
-                        <div class="col-md-6 col-sm-12 mt-0">
-                            <div class="ck-content hero-content">
-                                <h3>Sistem komputer</h3>
-                                <h1 class="m-0">Sandy Dwiartha</h1>
-                                <h2 class="mt-0">
-                                    <span class="typed-text-output"></span>
-                                    <span class="cursor">|</span>
-                                </h2>
-                                <div class="typed-text d-none">
-                                    Front End Developer, Back End Developer
-                                </div>
-                                <!-- <h2 class="typed-text-output d-inline"></h2>
-                                <div class="typed-text d-none">Front End Developer, Back End Developer</div> -->
-                                <!-- <div class="role-text">Web Developer</div> -->
-                            </div>
-                            <div class="hero-content mt-4">
-                                <a href="" class="btn btn-cv">Download CV</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6 col-sm-12 mt-3">
-                            <div class="d-flex justify-content-center">
-                                <div class="member-block-image-wrap">
-                                    <img src="aset/hero section/Foto Formal + BG(Sandy).png" alt="Foto Profil">
-                                </div>
-                            </div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/portfolio-v2.css" rel="stylesheet">
+</head>
+<body>
+    <div class="page-wrapper wrapper blog_area">
+        <main>
+            <!-- HERO -->
+            <section class="hero-v2" id="home">
+                <div class="bubble-bg" aria-hidden="true"></div>
+                <div class="hero-v2-content">
+                    <div class="hero-v2-copy">
+                        <span class="hero-eyebrow">Sistem Komputer · Bali</span>
+                        <h1>Sandy<br>Dwiartha.</h1>
+                        <div class="hero-role"><span class="typed-text-output"></span></div>
+                        <div class="typed-text d-none">Web Developer, Backend Developer, System Developer</div>
+                        <p class="hero-description">Membangun website dan sistem digital yang fungsional, terstruktur, dan mudah dikembangkan — dari tampilan hingga logika di baliknya.</p>
+                        <div class="hero-actions">
+                            <a href="#karya" class="hero-btn hero-btn-primary">Lihat karya <i class="fa-solid fa-arrow-down"></i></a>
+                            <a href="" class="hero-btn hero-btn-ghost"><i class="fa-regular fa-file-lines"></i> Download CV</a>
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Navbar -->
+                <div class="hero-showcase" aria-label="Pilihan karya">
+                    <div class="project-slider-v2">
+                        <a class="project-slide-v2 active" href="proyek/detail_nexstock.html">
+                            <img src="aset/sampul_karya/nexstock.png" alt="NexStock — Inventory Management System">
+                            <div class="slide-caption"><span class="slide-kicker">Selected work</span><h2>NexStock</h2><p>Inventory Management System</p></div>
+                        </a>
+                        <a class="project-slide-v2" href="proyek/detail_nalaandpartners.html">
+                            <img src="aset/sampul_karya/nalaandpartners.png" alt="Nala & Partners — Company Profile Website">
+                            <div class="slide-caption"><span class="slide-kicker">Selected work</span><h2>Nala & Partners</h2><p>Company Profile Website</p></div>
+                        </a>
+                        <a class="project-slide-v2" href="proyek/detail_laundrybox.html">
+                            <img src="aset/sampul_karya/laundrybox.png" alt="LaundryBox — Laundry Management System">
+                            <div class="slide-caption"><span class="slide-kicker">Selected work</span><h2>LaundryBox</h2><p>Laundry Management System</p></div>
+                        </a>
+                        <a class="project-slide-v2" href="proyek/detail_dievas.html">
+                            <img src="aset/sampul_karya/dievas.png" alt="TRAXA — Vehicle Monitoring System">
+                            <div class="slide-caption"><span class="slide-kicker">Selected work</span><h2>TRAXA</h2><p>Vehicle Monitoring System</p></div>
+                        </a>
+                        <a class="project-slide-v2" href="proyek/detail_neurolinked.html">
+                            <img src="aset/sampul_karya/neurolinked.png" alt="Neurolinked — Digital Platform">
+                            <div class="slide-caption"><span class="slide-kicker">Selected work</span><h2>Neurolinked</h2><p>Digital Platform</p></div>
+                        </a>
+                    </div>
+                    <div class="hero-project-meta"><span class="counter">01 / 05</span><span class="line"></span><span>Auto showcase</span></div>
+                </div>
+
+                <div class="hero-profile">
+                    <img src="aset/hero section/hero-new.png" alt="Sandy Dwiartha">
+                </div>
+            </section>
+
+            <!-- NAVBAR -->
             <nav class="sticky navbar" id="navbar">
-                <input type="checkbox" id="nav" class="hidden" />
-                <!-- <label for="nav" class="nav__open"><i></i><i></i><i></i></label> -->
                 <div class="nav">
+                    <button class="nav-mobile-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="nav-backdrop" aria-hidden="true"></div>
                     <ul class="nav-items">
+                        <li class="nav-menu-close-item"><button class="nav-menu-close" type="button" aria-label="Tutup menu navigasi"><i class="fa-solid fa-xmark"></i></button></li>
                         <li class="nav-item"><a href="#home" class="nav-link active">Beranda</a></li>
                         <li class="nav-item"><a href="#tentang" class="nav-link">Tentang</a></li>
-                        <li class="nav-item"><a href="#keterampilan" class="nav-link">Keterampilan</a></li>
+                        <!-- <li class="nav-item"><a href="#keterampilan" class="nav-link">Keterampilan</a></li> -->
                         <li class="nav-item"><a href="#pendidikan" class="nav-link">Pendidikan</a></li>
                         <li class="nav-item"><a href="#karya" class="nav-link">Karya</a></li>
                     </ul>
                 </div>
             </nav>
-            
-            <!-- About -->  
-            <section class="about py-6" id="tentang">
+
+            <!-- ABOUT -->
+            <section class="about-v2" id="tentang">
                 <div class="container">
                     <div class="row g-5 align-items-center">
-                        <div class="col-lg-6">
-                            <div class="member-block d-flex justify-content-center">
-                                <div class="member-block-image-wrap">
-                                    <img src="aset/about.jpg" class="member-block-image" alt="">
+                        <div class="col-lg-5">
+                            <div class="about-v2-image">
+                                <img src="aset/about.jpg" alt="Sandy Dwiartha">
+                                <div class="about-v2-social">
+                                    <a href="https://wa.me/6281939716219" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                                    <a href="https://www.instagram.com/kdksandy_/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/in/sandy-dwiartha-0b9230397/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                                    <a href="https://github.com/kadeksandy" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-lg-6">
-                            <div class="ck-content">
-                                <h1>Tentang saya</h1>
-                                <p>
-                                    Saya adalah seorang pengembang sistem dan web yang memiliki dedikasi tinggi dalam menciptakan solusi digital inovatif berbasis teknologi modern. 
-                                    Saat ini, saya sedang menempuh pendidikan di <strong>ITB STIKOM Bali</strong>, setelah sebelumnya membangun fondasi teknis yang kuat di SMK TI Bali Global Jimbaran.
-                                </p>
-                                <p>
-                                    Keahlian utama saya terletak pada pengembangan aplikasi menggunakan framework <strong>Laravel</strong> untuk kebutuhan backend yang terstruktur, 
-                                    serta perancangan antarmuka pengguna (UI/UX) yang intuitif melalui <strong>Figma</strong>. Saya memiliki pengalaman nyata dalam mengelola siklus 
-                                    pengembangan perangkat lunak secara menyeluruh, mulai dari perancangan sistem, implementasi kode, hingga tahap pengujian.
-                                </p>
-                                <div class="d-flex">
-                                    <a class="btn btn-square me-2" href="https://wa.me/6281391527799"><i class="fa-brands fa-whatsapp"></i></a>
-                                    <a class="btn btn-square me-2" href="https://www.instagram.com/kdksandy_/"><i class="fa-brands fa-instagram"></i></a>
-                                    <a class="btn btn-square me-2" href="https://www.linkedin.com/in/sandy-dwiartha-0b9230397/"><i class="fab fa-linkedin-in"></i></a>
-                                    <a class="btn btn-square me-2" href="https://github.com/kadeksandy"><i class="fa-brands fa-github"></i></a>
+                        <div class="col-lg-7">
+                            <div class="about-v2-copy">
+                                <span class="section-kicker mb-2">Tentang saya</span>
+                                <!-- <h2>Developer yang suka membangun sesuatu sampai benar-benar bisa digunakan.</h2> -->
+                                <p>Pengembang sistem berbasis web yang berfokus pada pembuatan solusi digital yang fungsional dan mudah dikembangkan. Saat ini saya menempuh pendidikan di <strong>ITB STIKOM Bali</strong>, setelah sebelumnya membangun fondasi teknis di SMK TI Bali Global Jimbaran.</p>
+                                <!-- <p>Fokus saya berada pada pengembangan backend dengan <strong>Laravel</strong>, pengelolaan database, serta perancangan antarmuka yang tetap memperhatikan pengalaman pengguna. Saya terbiasa mengerjakan proyek dari tahap perancangan, implementasi, pengujian, hingga penyempurnaan.</p> -->
+                                <div class="about-facts">
+                                    <div class="about-fact skill-v2-card"><small>Fokus</small>
+                                        <p>Fokus saya berada pada pengembangan backend dengan Laravel hingga pengelolaan database.</p>
+                                        <div class="tech-list"><span>Web & System Development</span></div>
+                                    </div>
+                                    <div class="about-fact skill-v2-card">
+                                        <small>Backend</small>
+                                        <p>Membangun logika aplikasi, API, autentikasi, serta struktur sistem yang terorganisir dan mudah dikembangkan.</p>
+                                        <div class="tech-list"><span>Laravel</span><span>PHP</span><span>REST API</span><span>MySQL</span></div>
+                                        <!-- <strong>Laravel · PHP · MySQL</strong> -->
+                                    </div>
+                                    <div class="about-fact skill-v2-card">
+                                        <small>Frontend</small>
+                                        <p>Menerjemahkan rancangan menjadi antarmuka responsif dengan perhatian pada hierarchy, usability, dan detail visual.</p>
+                                        <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                                        <!-- <strong>HTML · CSS · JavaScript</strong> -->
+                                    </div>
+                                    <div class="about-fact skill-v2-card">
+                                        <small>Workflow</small>
+                                        <p>Mengelola alur kerja pengembangan dengan menggunakan Git dan GitHub untuk kolaborasi tim dan version control.</p>
+                                        <div class="tech-list"><span>Git</span><span>GitHub</span></div>
+                                        <!-- <strong>Git · GitHub</strong> -->
+                                        <!-- <div class="about-fact"><small>Workflow</small><strong>Git · GitHub · Figma</strong></div> -->
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </section>
-            
-            <!-- Skill -->
-            <section class="skill" id="keterampilan">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f4f6ff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,0L1405.7,0C1371.4,0,1303,0,1234,0C1165.7,0,1097,0,1029,0C960,0,891,0,823,0C754.3,0,686,0,617,0C548.6,0,480,0,411,0C342.9,0,274,0,206,0C137.1,0,69,0,34,0L0,0Z"></path></svg>
+
+            <!-- SKILLS -->
+            <!-- <section class="skills-v2" id="keterampilan">
                 <div class="container">
-                    <div class="col-md-8 mx-auto text-center text-muted mb-5"><span class="subtitle text-uppercase mb-3 fw-bold" data-aos="fade-up" data-aos-delay="0">KEAHLIAN TEKNIS</span>
-                        <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Keahlian & Pengalaman Teknis</h2>
+                    <div class="section-heading">
+                        <span class="section-kicker">Keahlian teknis</span>
+                        <h2>Tools yang saya gunakan untuk membangun produk digital.</h2>
+                        <p>Bukan sekadar daftar teknologi, tetapi tools yang paling sering saya gunakan dalam proses perancangan dan pengembangan proyek.</p>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-sm-12 col-md-3 pt-4">
-                            <div class="skill skill-content h-100">
-                                <div class="skill-content-icon">
-                                    <i class="fa-brands fa-figma fa-2x mb-3"></i>
-                                </div>
-                                <p> 
-                                    Memanfaatkan Figma untuk merancang antarmuka pengguna dan pengalaman pengguna, mencakup perencanaan tata letak, 
-                                    alur navigasi, hingga desain visual.
-                                    <!-- <a href="https://www.figma.com/design/Y5zWeLDyGh8dz1opy6zENy/Proyek---TRIFY?t=7dqlq2C5CS06XfUO-1" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 pt-4">
-                            <div class="skill skill-content h-100">
-                                <div class="skill-content-icon">
-                                    <i class="fa-brands fa-laravel fa-2x mb-3"></i>
-                                </div>
-                                <p> 
-                                    Mengandalkan framework Laravel dengan fokus pada manajemen basis data yang efisien serta mudah untuk dikembangkan lebih lanjut.
-                                    <!-- <a href="https://ga.dievastravel.com/login" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 pt-4">
-                            <div class="skill skill-content h-100">
-                                <div class="skill-content-icon">
-                                    <i class="bi bi-credit-card fa-2x"></i>
-                                </div>
-                                <p> 
-                                    Memiliki pengalaman dalam eksplorasi dan implementasi payment gateway khususnya Xendit untuk memfasilitasi transaksi digital dalam aplikasi. 
-                                    <!-- <a href="" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-sm-12 col-md-3 pt-4">
-                            <div class="skill skill-content h-100">
-                                <div class="skill-content-icon">
-                                    <i class="bi bi-bell fa-2x "></i>
-                                </div>
-                                <p> 
-                                    Mampu mengembangkan fitur notifikasi secara real-time dengan mengintegrasikan Telegram Bot API ke dalam sistem web. 
-                                    <!-- <a href="" class="btn btn-skill" arget="_blank" rel="noopener noreferrer">Selengkapnya</a> -->
-                                </p>
-                            </div>
-                        </div>
+                    <div class="skills-grid">
+                        <article class="skill-v2-card">
+                            <div class="skill-v2-icon"><i class="fa-solid fa-server"></i></div>
+                            <h3>Backend Development</h3>
+                            <p>Membangun logika aplikasi, API, autentikasi, serta struktur sistem yang terorganisir dan mudah dikembangkan.</p>
+                            <div class="tech-list"><span>Laravel</span><span>PHP</span><span>REST API</span><span>MySQL</span></div>
+                        </article>
+                        <article class="skill-v2-card">
+                            <div class="skill-v2-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                            <h3>Frontend Development</h3>
+                            <p>Menerjemahkan rancangan menjadi antarmuka responsif dengan perhatian pada hierarchy, usability, dan detail visual.</p>
+                            <div class="tech-list"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
+                        </article>
+                        <article class="skill-v2-card">
+                            <div class="skill-v2-icon"><i class="fa-solid fa-pen-ruler"></i></div>
+                            <h3>UI / UX & Workflow</h3>
+                            <p>Merancang alur pengguna dan visual sebelum implementasi, sekaligus menjaga workflow pengembangan tetap terkontrol.</p>
+                            <div class="tech-list"><span>AI</span><span>Git</span><span>GitHub</span><span>Filament</span></div>
+                        </article>
                     </div>
                 </div>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f4f6ff" fill-opacity="1" d="M0,224L34.3,192C68.6,160,137,96,206,90.7C274.3,85,343,139,411,144C480,149,549,107,617,122.7C685.7,139,754,213,823,240C891.4,267,960,245,1029,224C1097.1,203,1166,181,1234,160C1302.9,139,1371,117,1406,106.7L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
-            </section>
-            
-            <!-- Education -->        
-            <section class="pendidikan py-6" id="pendidikan">
+            </section> -->
+
+            <!-- EXPERIENCE -->
+            <section class="experience-v2" id="pendidikan">
                 <div class="container">
-                    <div class="row ">
-                        <div class="col-md-8 mx-auto text-center text-muted"><span class="subtitle text-uppercase mb-3 fw-bold" data-aos="fade-up" data-aos-delay="0">PENDIDIKAN</span>
-                            <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Riwayat Pendidikan & Pengalaman</h2>
+                    <div class="section-heading">
+                        <span class="section-kicker">Pendidikan & pengalaman</span>
+                        <h2>Perjalanan belajar dan proyek yang membentuk saya.</h2>
+                    </div>
+                    <div class="timeline-v2">
+                        <div class="timeline-v2-item">
+                            <div class="timeline-v2-side left"><h3>ITB STIKOM Bali</h3><span class="period">2024 — Sekarang</span></div>
+                            <div class="timeline-v2-dot"></div>
+                            <div class="timeline-v2-side"><h4>Pendidikan & Organisasi</h4><p>Berperan aktif dalam kegiatan organisasi mahasiswa dengan fokus pada koordinasi program kerja, komunikasi, kolaborasi tim, dan pengembangan soft skill.</p><h4>Pengembangan Proyek</h4><p>Mengembangkan berbagai solusi digital berbasis web, termasuk sistem manajemen dan platform profil organisasi dengan fokus pada fungsionalitas dan pengalaman pengguna.</p></div>
                         </div>
-                        <hr>
-                        <div class="timeline">
-                            <!-- ITEM 1 -->
-                            <div class="timeline-item">
-                                <div class="timeline-left ck-content">
-                                    <h3>ITB STIKOM BALI Kampus Jimbaran</h3>
-                                    <p>2024 - Sekarang</p>
-                                </div>
-
-                                <div class="timeline-center">
-                                    <span class="dot"></span>
-                                    <!-- <span class="arrow"></span> -->
-                                </div>
-
-                                <div class="timeline-right ck-content">
-                                    <h4>Pengalaman Organisasi :</h4>
-                                    <p>Berperan aktif dalam Himpunan Mahasiswa sebagai wadah pengembangan diri, dengan fokus pada koordinasi program kerja, diskusi internal, 
-                                    serta pengasahan soft skills yang mencakup komunikasi, kolaborasi tim, dan manajerial organisasi.</p>
-                                    <h4>Pengembangan Proyek :</h4>
-                                    <p>Mengembangkan berbagai solusi digital berbasis web, diantaranya membuat sistem manajemen rental kendaraan, manajemen layanan laundry dan platform profil organisasi. 
-                                    Fokus utama meliputi perancangan antarmuka pengguna, pengelolaan fungsi sistem, serta implementasi solusi teknologi yang dibutuhkan pengguna.</p>
-                                </div>
-                            </div>
-
-                            <!-- ITEM 2 -->
-                            <div class="timeline-item">
-                                <div class="timeline-left">
-                                    <h3>SMK TI Bali Global Jimbaran</h3>
-                                    <p>2021 - 2024</p>
-                                </div>
-
-                                <div class="timeline-center">
-                                    <span class="dot"></span>
-                                    <!-- <span class="arrow"></span> -->
-                                </div>
-
-                                <div class="timeline-right ck-content">
-                                    <h4>Pengalaman Organisasi :</h4>
-                                    <p>Berpartisipasi aktif dalam organisasi OSIS dengan terlibat dalam perencanaan dan pelaksanaan berbagai agenda sekolah. 
-                                    Bertanggung jawab dalam mendukung kebutuhan digital dan dokumentasi untuk memastikan kelancaran program kerja organisasi.</p>
-                                    <h4>Pengembangan Proyek :</h4>
-                                    <p>Bertanggung jawab atas pengembangan frontend website OSIS untuk ajang lomba Stibajra Technology Competition dan Open Recruitment OSIS. 
-                                    Fokus pengerjaan mencakup optimalisasi struktur konten, estetika antarmuka, serta peningkatan akses informasi bagi siswa maupun panitia kegiatan.</p>
-                                </div>
-                            </div>
-
+                        <div class="timeline-v2-item">
+                            <div class="timeline-v2-side left"><h3>SMK TI Bali Global Jimbaran</h3><span class="period">2021 — 2024</span></div>
+                            <div class="timeline-v2-dot"></div>
+                            <div class="timeline-v2-side"><h4>Organisasi & Teknologi</h4><p>Berpartisipasi dalam OSIS serta mendukung kebutuhan digital dan dokumentasi berbagai kegiatan sekolah.</p><h4>Pengembangan Proyek</h4><p>Mengembangkan frontend website untuk Stibajra Technology Competition dan Open Recruitment OSIS dengan fokus pada struktur konten, estetika, dan akses informasi.</p></div>
                         </div>
-                        <!-- <div class="row my-2">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="pendidikan-content-edu">
-                                    <h5 class="mb-3">ITB STIKOM BALI Kampus Jimbaran</h5>
-                                    <p>2024 - Sekarang</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="pendidikan-content-detail">
-                                    <h5 class="mb-3">Pengalaman Organisasi :</h5>
-                                    <p>Berperan aktif dalam Himpunan Mahasiswa sebagai wadah pengembangan diri, dengan fokus pada koordinasi program kerja, diskusi internal, 
-                                    serta pengasahan soft skills yang mencakup komunikasi, kolaborasi tim, dan manajerial organisasi</p>
-                                </div>
-                                <div class="pendidikan-content-detail">
-                                    <h5 class="mb-3">Pengembangan Proyek :</h5>
-                                    <p>Mengembangkan berbagai solusi digital berbasis web, termasuk sistem manajemen layanan laundry terintegrasi (Laundrybox) dan platform profil organisasi (Yayasan ABSA). 
-                                    Fokus utama meliputi perancangan antarmuka pengguna (UI/UX), pengelolaan fungsionalitas sistem, serta implementasi solusi teknologi yang selaras dengan kebutuhan pengguna</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row my-2">
-                            <div class="col-sm-12 col-md-6">
-                                <div class="pendidikan-content-edu">
-                                    <h5 class="mb-3">SMK TI Bali Global Jimbaran</h5>
-                                    <p>2021 - 2024</p>
-                                </div>
-                            </div>
-                            <div class="col-sm-12 col-md-6">
-                                <div class="pendidikan-content-detail">
-                                    <h5 class="mb-3">Pengalaman Organisasi :</h5>
-                                    <p>Berpartisipasi aktif dalam organisasi OSIS dengan terlibat dalam perencanaan dan pelaksanaan berbagai agenda sekolah. 
-                                    Bertanggung jawab dalam mendukung kebutuhan digital dan dokumentasi untuk memastikan kelancaran program kerja organisasi</p>
-                                </div>
-                                <div class="pendidikan-content-detail">
-                                    <h5 class="mb-3">Pengembangan Proyek :</h5>
-                                    <p>Bertanggung jawab atas pengembangan frontend website OSIS untuk ajang lomba Stibajra Technology Competition (STC) dan Open Recruitment (OR). 
-                                    Fokus pengerjaan mencakup optimalisasi struktur konten, estetika antarmuka, serta peningkatan aksesibilitas informasi bagi siswa maupun panitia kegiatan</p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
             </section>
 
-            <!-- Karya -->
-            <section class="karya py-6" id="karya">
+            <!-- WORKS -->
+            <section class="works-v2" id="karya">
                 <div class="container">
-                    <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                        <div class="col-md-8 mx-auto text-center text-muted"><span class="subtitle text-uppercase mb-3 fw-bold" data-aos="fade-up" data-aos-delay="0">PORTOFOLIO</span>
-                            <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100">Proyek yang Pernah Dikerjakan</h2>
+                    <div class="section-heading">
+                        <span class="section-kicker">Selected works</span>
+                        <h2>Beberapa karya yang pernah saya bangun.</h2>
+                        <p>Website, aplikasi, dan sistem digital yang saya kerjakan selama proses belajar maupun untuk kebutuhan nyata.</p>
+                    </div>
+
+                    <div class="featured-work">
+                        <a class="work-card large" href="proyek/detail_nexstock.html"><img src="aset/sampul_karya/nexstock.png" alt="NexStock"><div class="work-card-content"><small>Inventory Management</small><h3>NexStock</h3><p>Sistem manajemen persediaan untuk membantu pengelolaan stok dan operasional.</p></div></a>
+                        <div class="work-stack">
+                            <a class="work-card" href="proyek/detail_nalaandpartners.html"><img src="aset/sampul_karya/nalaandpartners.png" alt="Nala & Partners"><div class="work-card-content"><small>Company profile</small><h3>Nala & Partners</h3><p>Website profil perusahaan dengan CMS.</p></div></a>
+                            <a class="work-card" href="proyek/detail_dievas.html"><img src="aset/sampul_karya/dievas.png" alt="TRAXA"><div class="work-card-content"><small>Monitoring system</small><h3>TRAXA</h3><p>Sistem monitoring kendaraan.</p></div></a>
                         </div>
                     </div>
-                    <div class="row g-4 justify-content-center">
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/nalaandpartners.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Website Profil Perusahaan</h5>
-                                        <span>Nala and Partners</span>
-                                    </div>
-                                    <a href="proyek/detail_nalaandpartners.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/nexstock.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Sistem Manajemen Persediaan</h5>
-                                        <span>Nexstock</span>
-                                    </div>
-                                    <a href="proyek/detail_nexstock.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/dievas.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Sistem Monitoring Kendaraan</h5>
-                                        <span>DievasTravel</span>
-                                    </div>
-                                    <a href="proyek/detail_dievas.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/absa.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Website Profil Yayasan</h5>
-                                        <span>YayasanABSA</span>
-                                    </div>
-                                    <a href="proyek/detail_yayasanabsa.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/neurolinked.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Platform Edukasi Digital</h5>
-                                        <span>Neurolinked</span>
-                                    </div>
-                                    <a href="proyek/detail_neurolinked.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/laundrybox.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Sistem Manajemen Laundry</h5>
-                                        <span>Laundrybox</span>
-                                    </div>
-                                    <a href="proyek/detail_laundrybox.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/or-osis.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Website Kegiatan Organisasi</h5>
-                                        <span>Osis</span>
-                                    </div>
-                                    <a href="proyek/detail_orosis.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="team-item position-relative">
-                                <img class="img-fluid" src="aset/sampul_karya/stc.png" alt="">
-                                <div class="team-text p-4">
-                                    <div>
-                                        <h5>Website Kompetisi Teknologi</h5>
-                                        <span>STC</span>
-                                    </div>
-                                    <a href="proyek/detail_stc.html">
-                                        <i class="fa fa-arrow-right fa-2x text-primary"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+
+                    <div class="works-grid">
+                        <a class="work-card" href="proyek/detail_laundrybox.html"><img src="aset/sampul_karya/laundrybox.png" alt="LaundryBox"><div class="work-card-content"><small>Management system</small><h3>LaundryBox</h3><p>Sistem manajemen laundry.</p></div></a>
+                        <a class="work-card" href="proyek/detail_neurolinked.html"><img src="aset/sampul_karya/neurolinked.png" alt="Neurolinked"><div class="work-card-content"><small>Digital platform</small><h3>Neurolinked</h3><p>Platform digital dan edukasi.</p></div></a>
+                        <a class="work-card" href="proyek/detail_yayasanabsa.html"><img src="aset/sampul_karya/absa.png" alt="Yayasan ABSA"><div class="work-card-content"><small>Organization</small><h3>Yayasan ABSA</h3><p>Website profil yayasan.</p></div></a>
+                        <!-- <a class="work-card" href="proyek/detail_orosis.html"><img src="aset/sampul_karya/or-osis.png" alt="Open Recruitment OSIS"><div class="work-card-content"><small>Event website</small><h3>Open Recruitment OSIS</h3><p>Website kegiatan organisasi.</p></div></a>
+                        <a class="work-card" href="proyek/detail_stc.html"><img src="aset/sampul_karya/stc.png" alt="Stibajra Technology Competition"><div class="work-card-content"><small>Competition</small><h3>STC</h3><p>Website kompetisi teknologi.</p></div></a> -->
                     </div>
+                    <div class="works-more"><a href="karya.html" class="btn-v2">Lihat semua karya <i class="fa-solid fa-arrow-right"></i></a></div>
                 </div>
             </section>
+
+            <!-- CTA -->
+            <section class="cta-v2">
+                <div class="container">
+                    <h2>Punya ide yang ingin diwujudkan?</h2>
+                    <p>Terbuka untuk berdiskusi mengenai website, sistem informasi, maupun kebutuhan digital lainnya.</p>
+                    <a class="hero-btn hero-btn-primary" href="https://wa.me/6281391527799"><i class="fa-brands fa-whatsapp"></i> Mari berdiskusi</a>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content text-muted fw-bold">
+                <span>© 2026 Sandy Dwiartha — Portfolio V2.0</span>
+                <ul class="d-flex flex-wrap gap-2">
+                    <li><a class="btn btn-square" href="https://wa.me/6281391527799" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a></li>
+                    <li><a class="btn btn-square" href="https://www.instagram.com/kdksandy_/" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a class="btn btn-square" href="https://www.linkedin.com/in/sandy-dwiartha-0b9230397/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                    <li><a class="btn btn-square" href="https://github.com/kadeksandy" aria-label="GitHub"><i class="fa-brands fa-github"></i></a></li>
+                </ul>
+            </div>
         </div>
-        
-        <!-- Footer -->
-        <footer>
-            <div class="container">
-                <div class="footer-content text-muted fw-bold">
-                    <span>© 2025 Sandy Dwiartha — Portofolio V1.1</span>
-                    <ul class="d-flex flex-wrap gap-2">
-                        <li>
-                            <a class="btn btn-square" href="https://wa.me/6281939716219"><i class="fa-brands fa-whatsapp"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-square" href="https://www.instagram.com/kdksandy_/"><i class="fa-brands fa-instagram"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-square" href="https://www.linkedin.com/in/sandy-dwiartha-0b9230397/"><i class="fab fa-linkedin-in"></i></a>
-                        </li>
-                        <li>
-                            <a class="btn btn-square" href="https://github.com/kadeksandy"><i class="fa-brands fa-github"></i></a>
-                        </li>
-                    </ul>
-                </div>
-        </footer>
+    </footer>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
-        
-        <!-- Custom Javascript -->
-        <script src="js/main.js"></script>
-    	<script src="js/slick.min.js"></script>
-    	<script src="js/fresco.min.js"></script>
-        
-    </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    <script src="lib/typed/typed.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
 </html>

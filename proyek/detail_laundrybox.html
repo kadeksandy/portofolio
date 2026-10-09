@@ -12,7 +12,7 @@
         <!-- Google Web Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"> 
 
         <!-- Icon Font Stylesheet -->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" rel="stylesheet"/>
@@ -27,31 +27,36 @@
 
         <!-- Custom Stylesheet -->
         <link href="../css/style.css" rel="stylesheet">
+        <link href="../css/portfolio-v2.css" rel="stylesheet">
         <link href="../css/fresco.css" rel="stylesheet"/>
         <link href="../css/slicknav.min.css" rel="stylesheet"/>
 
     </head>
 
     <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-offset="51">
-        <div class="bubble-bg"></div>
 
-        <div class="wrapper">
+        <div class="wrapper blog_area">
             <!-- Hero -->
-            <div class="hero">
-                <h1>Laundrybox</h1>
-                <div class="widget">
-                    <span>Karya <i class="fa-solid fa-angle-right"></i> Detail Karya </span>
+            <div class="hero d-flex flex-column justify-content-center align-items-start">
+                <div class="container">
+                    <div class="bubble-bg" aria-hidden="true"></div>
+                    <span class="project-category-show"><a href="../karya.html">Karya</a> <i class="fa-solid fa-angle-right"></i> LaundryBox </span>
+                    <h1>LaundryBox</h1>
                 </div>
             </div>
             
             <!-- Navbar -->  
             <nav class="sticky navbar" id="navbar">
-                <input type="checkbox" id="nav" class="hidden" />
                 <div class="nav">
+                    <button class="nav-mobile-toggle" type="button" aria-label="Buka menu navigasi" aria-expanded="false">
+                        <span></span><span></span><span></span>
+                    </button>
+                    <div class="nav-backdrop" aria-hidden="true"></div>
                     <ul class="nav-items">
-                        <li class="nav-item"><a href="../index.html#beranda" class="nav-link">Beranda</a></li>
+                    <li class="nav-menu-close-item"><button class="nav-menu-close" type="button" aria-label="Tutup menu navigasi"><i class="fa-solid fa-xmark"></i></button></li>
+                        <li class="nav-item"><a href="../index.html#home" class="nav-link">Beranda</a></li>
                         <li class="nav-item"><a href="../index.html#tentang" class="nav-link">Tentang</a></li>
-                        <li class="nav-item"><a href="../index.html#keterampilan" class="nav-link">Keterampilan</a></li>
+                        <!-- <li class="nav-item"><a href="../index.html#keterampilan" class="nav-link">Keterampilan</a></li> -->
                         <li class="nav-item"><a href="../index.html#pendidikan" class="nav-link">Pendidikan</a></li>
                         <li class="nav-item"><a href="../index.html#karya" class="nav-link">Karya</a></li>
                     </ul>
@@ -68,8 +73,8 @@
                                     <img class="img-fluid" src="../aset/sampul_karya/laundrybox.png" alt="">
                                 </div>
                                 <div class="blog_details">
-                                    <div class="d-flex align-items-center justify-content-between mb-3">
-                                        <h2 class="m-0">Laundrybox</h2>
+                                    <div class="d-flex flex-wrap align-items-center justify-content-between">
+                                        <div class="section-label">Tentang proyek</div>
                                     </div>
                                     <div class="ck-content">
                                         <p>
@@ -107,77 +112,97 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="blog_right_sidebar">
-                                <aside class="single_sidebar_widget popular_post_widget">
-                                    <h3 class="widget_title">Proyek Lainnya</h3>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_yayasanabsa.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/absa.png" width="80">
+                                <aside class="project-sidebar">
+                                    <!-- Informasi Proyek -->
+                                    <div class="sidebar-card project-info-card">
+                                        <div class="sidebar-title">
+                                            Informasi Proyek
+                                        </div>
+                                        <div class="project-meta">
+                                            <div class="meta-item">
+                                                <span>Jenis</span>
+                                                <strong>Laundry Management System</strong>
                                             </div>
-                                            <div class="media-body">
-                                                <h3>Yayasan Amara Bhawana Sastra</h3>
+                                            <div class="meta-item">
+                                                <span>Teknologi</span>
+                                                <div class="tech-list">
+                                                    <span>Laravel</span>
+                                                    <span>Bootstrap CSS</span>
+                                                    <span>JavaScript</span>
+                                                    <span>Xendit</span>
+                                                    <span>Telegram API</span>
+                                                    <span>MySQL</span>
+                                                </div>
                                             </div>
-                                        </a>
+                                            <div class="meta-item">
+                                                <span>Status</span>
+                                                <strong>Completed</strong>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_nalaandpartners.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/nalaandpartners.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>Nala and Partners</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_dievas.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/dievas.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>Traxa</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_neurolinked.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/neurolinked.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>Neurolinked</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_orosis.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/or-osis.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>Open Recruitment OSIS</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_nexstock.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/nexstock.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>NexStock</h3>
-                                            </div>
-                                        </a>
-                                    </div>
-                                    <div class="d-flex gap-2 post_item mt-3">
-                                        <a href="detail_stc.html">
-                                            <div class="media-img">
-                                                <img src="../aset/sampul_karya/stc.png" width="80">
-                                            </div>
-                                            <div class="media-body">
-                                                <h3>Stibajra Technology Competition</h3>
-                                            </div>
-                                        </a>
+
+                                    <!-- Karya Lainnya -->
+                                    <div class="sidebar-card related-projects-card">
+                                        <div class="sidebar-title">
+                                            Karya Lainnya
+                                        </div>
+                                        <div class="related-projects">
+                                            <a href="detail_nalaandpartners.html" class="related-project">
+                                                <div>
+                                                    <strong>Nala &amp; Partners</strong>
+                                                    <span>Company profile</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+                                            
+                                            <a href="detail_orosis.html" class="related-project">
+                                                <div>
+                                                    <strong>Orosis</strong>
+                                                    <span>Organisation website</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+
+                                            <a href="detail_stc.html" class="related-project">
+                                                <div>
+                                                    <strong>STC</strong>
+                                                    <span>Event website</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+
+                                            <a href="detail_nexstock.html" class="related-project">
+                                                <div>
+                                                    <strong>NexStock</strong>
+                                                    <span>Inventory Management</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+
+                                            <a href="detail_neurolinked.html" class="related-project">
+                                                <div>
+                                                    <strong>Neurolinked</strong>
+                                                    <span>Digital platform</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+
+                                            <a href="detail_dievas.html" class="related-project">
+                                                <div>
+                                                    <strong>TRAXA</strong>
+                                                    <span>Vehicle Management</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+
+                                            <a href="detail_yayasanabsa.html" class="related-project">
+                                                <div>
+                                                    <strong>Yayasan ABSA</strong>
+                                                    <span>Company profile</span>
+                                                </div>
+                                                <b aria-hidden="true">↗</b>
+                                            </a>
+                                        </div>
                                     </div>
                                 </aside>
                             </div>
@@ -186,25 +211,25 @@
                     <div class="quote-wrapper mt-4">
                         <div class="quotes">
                             <div class="kegiatan-gallery">
-                                <h4 class="text-center py-3">Dokumentasi</h4>
+                                <div class="section-label text-center">Dokumentasi</div>
                                 <div class="row g-3">
                                     <div class="col-lg-4 col-md-6 col-12">
                                         <div class="gallery-item">
-                                            <a href="../aset/dokumentasi_laundrybox/beranda.png" class="glightbox" data-gallery="" data-title="" data-description="Halaman utama">
+                                            <a href="../aset/dokumentasi_laundrybox/beranda.png" class="glightbox" data-gallery="laundrybox" data-title="" data-description="Halaman utama">
                                                 <img src="../aset/dokumentasi_laundrybox/beranda.png" alt="" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-12">
                                         <div class="gallery-item">
-                                            <a href="../aset/dokumentasi_laundrybox/beranda2.png" class="glightbox" data-gallery="" data-title="" data-description="Halaman utama">
+                                            <a href="../aset/dokumentasi_laundrybox/beranda2.png" class="glightbox" data-gallery="laundrybox" data-title="" data-description="Halaman utama">
                                                 <img src="../aset/dokumentasi_laundrybox/beranda2.png" alt="" loading="lazy">
                                             </a>
                                         </div>
                                     </div>
                                     <div class="col-lg-4 col-md-6 col-12">
                                         <div class="gallery-item">
-                                            <a href="../aset/dokumentasi_laundrybox/chattelegram.jpeg" class="glightbox" data-gallery="" data-title="" data-description="Bot telegram">
+                                            <a href="../aset/dokumentasi_laundrybox/chattelegram.jpeg" class="glightbox" data-gallery="laundrybox" data-title="" data-description="Bot telegram">
                                                 <img src="../aset/dokumentasi_laundrybox/chattelegram.jpeg" alt="" loading="lazy">
                                             </a>
                                         </div>
@@ -221,7 +246,7 @@
         <footer>
             <div class="container">
                 <div class="footer-content text-muted fw-bold">
-                    <span>© 2025 Sandy Dwiartha — Portofolio V1.1</span>
+                    <span>© 2025 Sandy Dwiartha — Portofolio V2.0</span>
                     <ul class="d-flex flex-wrap gap-2">
                         <li>
                             <a class="btn btn-square" href="https://wa.me/6281939716219"><i class="fa-brands fa-whatsapp"></i></a>
@@ -242,9 +267,9 @@
         <!-- JavaScript Libraries -->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-        <script src="lib/wow/wow.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/typed/typed.min.js"></script>
+        <script src="../lib/wow/wow.min.js"></script>
+        <script src="../lib/easing/easing.min.js"></script>
+        <script src="../lib/typed/typed.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
         
         <!-- Custom Javascript -->
